@@ -1,0 +1,440 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  font-family: "Bruno Ace SC", cursive;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+.img{
+  vertical-align: middle;
+}
+
+nav {
+  padding-top: 40px;
+  background: #000;
+}
+
+nav ul {
+  justify-content: space-around;
+}
+
+nav li {
+  max-width: 306px;
+}
+
+nav a {
+  color: #d1d1d1;
+  transition: ease-in-out 0.2s;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #00ffa3;
+}
+
+.header {
+  justify-content: center;
+  align-items: center;
+  padding: 72px 0;
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+.header img {
+  margin-right: 24px;
+}
+
+.header-content {
+  flex-direction: column;
+  width: 636px;
+}
+
+.header h2 {
+  color: #fff;
+  font-family: Bruno Ace SC;
+  font-size: 64px;
+}
+
+.header h1 {
+  color: #00ffa3;
+  font-family: Bruno Ace SC;
+  font-size: 128px;
+  text-align: end;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.contactbtn {
+  decoration: none;
+  font-size: 16px;
+  display: block;
+  width: 214px;
+  color: #000;
+  padding: 12px 24px;
+  border-radius: 32px;
+  background: #fff;
+  margin-left: auto;
+  line-height: 1;
+}
+
+.contactbtn:hover {
+  background-color: #15161d;
+  color: #00ffa3;
+}
+
+//intro
+
+.intro {
+  background-size: cover;
+  color: #fff;
+  padding: 160px;
+}
+
+.intro-text {
+  margin-right: 24px;
+  width: 526px;
+}
+
+.intro-text h2 {
+  color: #fff;
+  font-family: Bruno Ace SC;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; //96px
+}
+
+.intro-text p {
+  padding-top: 36px;
+  color: #fff;
+  font-family: Bruno Ace SC;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 32px;
+}
+
+.intro-pic img {
+  display: flex;
+  width: 196px;
+  height: 600px;
+  margin-right: 24px;
+}
+
+//about
+.about {
+  justify-content: space-between;
+}
+
+.card-list {
+  flex-wrap: wrap;
+}
+
+.card-list li {
+  max-width: 306px;
+  border: 1px solid #d1d1d1;
+  padding: 16px;
+  margin: 12px;
+  align-items: center;
+}
+
+.about-content {
+  max-width: 526px;
+}
+
+.card {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content h2 {
+  color: #000;
+  font-family: Bruno Ace SC;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 96px */
+}
+
+.about-content p {
+  color: #15161d;
+  font-family: Bruno Ace SC;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 36px */
+}
+
+//contact
+.contact .d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 96px 0;
+}
+
+.contact-text {
+  width: 657px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-text h2 {
+  color: #fff;
+  width: 541px;
+  font-size: 64px;
+}
+
+.contact ul {
+  width: 526px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact ul li {
+  width: 162px;
+}
+
+.contact a {
+  display: block;
+}
+
+.contact a:hover {
+  border-radius: 40px;
+  background: lightgray 50% / cover no-repeat;
+  box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.9),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+//projectt
+.project {
+  padding: 160px 0;
+  background-color: #fff;
+}
+.project h3 {
+  width: 746px;
+  font-size: 64px;
+  color: #000;
+  margin-left: auto;
+  margin-bottom: 16px;
+}
+.projectInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projectInfo img{
+padding-right: 24px;
+}
+
+.projectInfo a{
+  text-decoration:none;
+}
+
+.rightsection {
+  width: 856px;
+}
+
+
+
+.top-img {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+.top-content {
+  display: flex;
+  flex-direction: column;
+}
+.top-content p {
+  width: 636px;
+  color: #000;
+}
+.top-content a {
+  width: 185px;
+  display: block;
+  padding: 12px 24px;
+  margin-top: auto;
+  border-radius: 32px;
+  background: #000;
+  color: #fff;
+  line-height: 1;
+}
+.top-content a img {
+  display: inline-block;
+  padding-right:0;
+}
+.button-img {
+  display: flex;
+  justify-content: space-between;
+}
+
+//footer
+footer {
+  padding: 40px 0;
+}
+
+footer h3 {
+  color: #fff;
+  text-align: center;
+}
+a:hover {
+  color: lightblue;
+}
+a:active {
+  color: greenyellow;
+}
